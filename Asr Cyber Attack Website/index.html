@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cyber Attack Information</title>
+</head>
+<body>
+    <h1>The following are the few types of Cyber Attacks click them to get the some information about them </h1>
+    <div class="container">
+        <div class="sidebar">
+            <div class="button-container">
+                <button onclick="showAttackInfo('Virus')">Virus</button>
+                <button onclick="showAttackInfo('Worms')">Worms</button>
+                <button onclick="showAttackInfo('Trojan')">Trojan</button>
+                <button onclick="showAttackInfo('Ransomware')">Ransomware</button>
+                <button onclick="showAttackInfo('Phishing')">Phishing</button>
+                <button onclick="showAttackInfo('DDoS')">DDoS</button>
+                <button onclick="showAttackInfo('Spyware')">Spyware</button>
+                <button onclick="showAttackInfo('Adware')">Adware</button>
+                <button onclick="showAttackInfo('Rootkit')">Rootkit</button>
+                <button onclick="showAttackInfo('Keylogger')">Keylogger</button>
+                <button onclick="showAttackInfo('Botnet')">Botnet</button>
+                <button onclick="showAttackInfo('SQL Injection')">SQL Injection</button>
+                <button onclick="showAttackInfo('Cross-Site Scripting')">Cross-Site Scripting</button>
+                <button onclick="showAttackInfo('Credential Stuffing')">Credential Stuffing</button>
+                <button onclick="showAttackInfo('Man-in-the-Middle')">Man-in-the-Middle</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <h2 id="attack-title"></h2>
+                    <p id="attack-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
